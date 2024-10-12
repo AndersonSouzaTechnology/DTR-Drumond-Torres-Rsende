@@ -756,15 +756,31 @@ section article .container .direito-empresarial p {
   height: 1px;
   background-color: var(--cor-4);
 }
-
 /* FIM ÁREAS DE ATUAÇÃO */
+
 
 /* FOOTER */
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--cor-1);
+  font-family: var(--manrope);
   height: 300px;
+  color: var(--cor-7);
+  gap: 50px;
+}
+
+.menu-footer ul li {
+  list-style: none;
+} 
+
+.menu-footer ul li  a {
+  text-decoration: none;
 }
 /* FIM FOOTER */
+
+
 
 /* RESPONSIVIDADE */
 
@@ -1150,24 +1166,6 @@ footer {
 }
 
 /* FIM CHAMADA DE AÇÃO 2 */
-
-
-/* 
-@media (max-width: 1216px) {
-   
-  .container {
-    flex-direction: column;
-  }
-
-  .divisor-article {
-    width: 900px; 
-  }
-  
-  section article .container .direito-empresarial p {
-    padding: 0;
-  }
-} */
-
 
 
 /* ÁREAS DE ATUAÇÃO */
