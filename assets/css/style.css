@@ -644,7 +644,7 @@ button:hover {
   /* left: 0; */
   width: 100%;
   /* height: 100%; */
-  height: 432px;
+  height: 434px;
   background-color: #000000;
   opacity: 0.7;
   /* z-index: 1; */
@@ -760,24 +760,218 @@ section article .container .direito-empresarial p {
 
 
 /* FOOTER */
-footer {
+
+/* footer {
+  background-color: var(--cor-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.footer-div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  flex-direction: initial;
   background-color: var(--cor-1);
   font-family: var(--manrope);
-  height: 300px;
   color: var(--cor-7);
   gap: 50px;
 }
 
-.menu-footer ul li {
+footer img {
+  width: 250px;
+}
+
+footer h3 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.menu-footer nav ul li {
   list-style: none;
+  line-height: 1.6;
 } 
 
-.menu-footer ul li  a {
+.menu-footer nav ul li  a {
   text-decoration: none;
+  color: var(--cor-7);
 }
+
+.menu-footer nav ul li  a:hover {
+  color: var(--cor-4);
+}
+
+.enderecos address {
+  line-height: 1.4;
+}
+
+.button-acao-footer {
+background-color: transparent;
+color: var(--cor-7);
+border: solid 1px var(--cor-7);
+padding: 10px 25px;
+}
+
+.footer-icones-sociais i {
+  color: var(--cor-7);
+  /* display: flex;
+  gap: 20px; 
+  margin: 0 10px;
+} */
+
+
+
+/* Estilos gerais */
+.footer {
+  background-color: var(--cor-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  height: 330px;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  background-color: var(--cor-1);
+  font-family: var(--manrope);
+  color: var(--cor-7);
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 250px;
+}
+
+footer h3 {
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.menu-footer nav ul li {
+  list-style: none;
+  line-height: 1.6;
+}
+
+.menu-footer nav ul li a {
+  text-decoration: none;
+  color: var(--cor-7);
+}
+
+.menu-footer nav ul li a:hover {
+  color: var(--cor-4);
+}
+
+.enderecos address {
+  line-height: 1.4;
+}
+
+.button-acao-footer {
+  background-color: transparent;
+  color: var(--cor-7);
+  border: solid 1px var(--cor-7);
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.footer-icones-sociais {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icones-sociais i {
+  color: var(--cor-7);
+  font-size: 24px;
+}
+
+.direitos-reservados {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+  font-family: var(--manrope);
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Responsividade - Para telas médias (tablets e dispositivos com largura maior que 768px) */
+@media (max-width: 768px) {
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  footer img {
+    width: 200px;
+  }
+
+  .menu-footer,
+  .enderecos,
+  .fale-conosco,
+  .footer-redes-sociais {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .button-acao-footer {
+    padding: 8px 20px;
+  }
+
+  .footer-icones-sociais {
+    justify-content: center;
+  }
+}
+
+/* Responsividade - Para telas pequenas (smartphones em modo retrato ou muito estreitas) */
+@media (max-width: 480px) {
+  .footer-div {
+    gap: 20px;
+  }
+
+  .footer-icones-sociais {
+    gap: 10px;
+  }
+
+  .footer-icones-sociais i {
+    font-size: 20px;
+  }
+
+  .menu-footer nav ul li {
+    font-size: 14px;
+  }
+
+  footer img {
+    width: 180px;
+  }
+
+  footer h3 {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+
+  .button-acao-footer {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}
+
+
+
 /* FIM FOOTER */
 
 
