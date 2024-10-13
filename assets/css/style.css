@@ -51,6 +51,13 @@
 
 /*MENU MOBILE*/
 
+.div-header .menu-mobile .nav-mobile .logo-menu-mobile {
+  width: 180px;
+  position: relative;
+  right: 150px;
+  bottom: 20px;
+}
+
 .btn-abrir-menu {
   display: none;
 }
@@ -72,7 +79,7 @@
 
 .menu-mobile {
   background-color: var(--cor-5);
-  height: 50vh;
+  height: 60vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -282,62 +289,7 @@ header a .button-menu:hover {
 
 /*FIM BANNER*/
 
-
 /*NOSSA VISÃO E VALORES*/
-
-/* .nossa-visao-valores {
-  background-color: var(--cor-5);
-  display: flex;
-  padding: 80px;
-  justify-content: space-between;
-  gap: 80px;
-}
-
-
-.nossa-visao h2 {
-  font-family: var(--manrope);
-  color: var(--cor-1);
-  font-size: 44px;
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.divisor {
-  width: 70px;
-  height: 3px;
-  background-color: var(--cor-4);
-  display: inline-block;
-  margin-bottom: 15px;
-  margin-left: 20px;
-}
-
-.nossa-visao h3, .nossos-valores h3{
-  font-family: var(--manrope);
-  color: var(--cor-1);
-  font-size: 23px;
-  margin-bottom: 25px;
-  padding: 0 20px;
-}
-
-.nossa-visao p, .nossos-valores p {
-  font-family: var(--manrope);
-  color: var(--cor-1);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 0 20px;
-}
-
-.nossos-valores {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nossos-valores h3 {
-  padding-top: 90px;
-} */
-
-
 
 .nossa-visao-valores {
   background-color: var(--cor-5);
@@ -598,15 +550,6 @@ button:hover {
   gap: 20px;
 }
 
-/* .divisor-foto-socios {
-  position: relative;
-  display: block;
-  width: 320px;
-  height: 1px;
-  background-color: var(--cor-4);
-  margin-top: 30px;
-} */
-
 .h3-socios {
   font-size: 25px;
   margin-top: 30px;
@@ -761,215 +704,122 @@ section article .container .direito-empresarial p {
 
 /* FOOTER */
 
-/* footer {
-  background-color: var(--cor-1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-}
-
-.footer-div {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: initial;
-  background-color: var(--cor-1);
+.footer {
   font-family: var(--manrope);
   color: var(--cor-7);
-  gap: 50px;
-}
-
-footer img {
-  width: 250px;
-}
-
-footer h3 {
-  font-size: 16px;
-  padding-bottom: 20px;
-}
-
-.menu-footer nav ul li {
-  list-style: none;
-  line-height: 1.6;
-} 
-
-.menu-footer nav ul li  a {
-  text-decoration: none;
-  color: var(--cor-7);
-}
-
-.menu-footer nav ul li  a:hover {
-  color: var(--cor-4);
-}
-
-.enderecos address {
-  line-height: 1.4;
-}
-
-.button-acao-footer {
-background-color: transparent;
-color: var(--cor-7);
-border: solid 1px var(--cor-7);
-padding: 10px 25px;
-}
-
-.footer-icones-sociais i {
-  color: var(--cor-7);
-  /* display: flex;
-  gap: 20px; 
-  margin: 0 10px;
-} */
-
-
-
-/* Estilos gerais */
-.footer {
   background-color: var(--cor-1);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
   height: 330px;
 }
 
 .footer-div {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-  background-color: var(--cor-1);
-  font-family: var(--manrope);
-  color: var(--cor-7);
-  gap: 50px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 40px;
 }
 
-footer img {
+.footer-div img {
   width: 250px;
+  position: relative;
+  bottom: 13px;
 }
 
-footer h3 {
-  font-size: 16px;
-  padding-bottom: 20px;
-  margin: 0;
-}
-
-.menu-footer nav ul li {
+footer .footer .menu-footer nav ul li {
   list-style: none;
+}
+
+footer .footer .menu-footer, 
+.enderecos, .fale-conosco, .footer-redes-sociais, h3 {
+  margin-bottom: 20px;
+}
+
+footer .footer .menu-footer nav ul li a {
+  text-decoration: none;
+  color: var(--cor-7);
   line-height: 1.6;
 }
 
-.menu-footer nav ul li a {
-  text-decoration: none;
-  color: var(--cor-7);
-}
-
-.menu-footer nav ul li a:hover {
+footer .footer .menu-footer nav ul li a:hover {
   color: var(--cor-4);
 }
 
-.enderecos address {
+.enderecos, .fale-conosco, address {
+  font-style: normal;
   line-height: 1.4;
 }
 
 .button-acao-footer {
   background-color: transparent;
-  color: var(--cor-7);
   border: solid 1px var(--cor-7);
+  color: var(--cor-7);
   padding: 10px 25px;
-  cursor: pointer;
-}
-
-.footer-icones-sociais {
-  display: flex;
-  gap: 15px;
 }
 
 .footer-icones-sociais i {
   color: var(--cor-7);
-  font-size: 24px;
+  margin-left: 15px;
 }
 
 .direitos-reservados {
+  font-family: var(--manrope);
   background-color: var(--cor-4);
   color: var(--cor-7);
-  font-family: var(--manrope);
-  font-size: 12px;
-  padding: 8px;
   text-align: center;
+  font-size: 12px;
+  padding: 5px;
 }
 
-/* Responsividade - Para telas médias (tablets e dispositivos com largura maior que 768px) */
-@media (max-width: 768px) {
-  .footer-div {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 0 20px;
-  }
-
-  footer img {
-    width: 200px;
-  }
-
-  .menu-footer,
-  .enderecos,
-  .fale-conosco,
+@media (max-width: 1090px) {
   .footer-redes-sociais {
-    width: 100%;
-    text-align: center;
-  }
-
-  footer h3 {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-
-  .button-acao-footer {
-    padding: 8px 20px;
-  }
-
-  .footer-icones-sociais {
-    justify-content: center;
+    display: none;
   }
 }
 
-/* Responsividade - Para telas pequenas (smartphones em modo retrato ou muito estreitas) */
-@media (max-width: 480px) {
+@media (max-width: 950px) {
+  footer .footer-div .fale-conosco {
+    display: none;
+  }
+}
+
+@media (max-width: 786px) {
+
+  .footer {
+    height: 1000px;
+  }
+
   .footer-div {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .footer-icones-sociais {
-    gap: 10px;
+  .footer-redes-sociais {
+    display: block;
   }
 
-  .footer-icones-sociais i {
-    font-size: 20px;
-  }
-
-  .menu-footer nav ul li {
-    font-size: 14px;
-  }
-
-  footer img {
-    width: 180px;
-  }
-
-  footer h3 {
-    font-size: 14px;
-    padding-bottom: 8px;
-  }
-
-  .button-acao-footer {
-    padding: 6px 15px;
-    font-size: 14px;
+  footer .footer-div .fale-conosco {
+    display: block;
   }
 }
+  
 
+@media (max-width: 600px) {
+  
+  .footer {
+    height: 1000px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .direitos-reservados {
+    font-size: 10px;
+  }
+
+}
 
 
 /* FIM FOOTER */
@@ -1467,3 +1317,58 @@ footer h3 {
 
 /* FIM ÁREAS DE ATUAÇÃO */
 
+
+
+/*FOOTER*/
+
+@media (max-width: 1090px) {
+  .footer-redes-sociais {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .footer-div .fale-conosco {
+    display: none;
+  }
+}
+
+@media (max-width: 786px) {
+
+  .footer {
+    height: 1000px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-redes-sociais {
+    display: block;
+  }
+
+  footer .footer-div .fale-conosco {
+    display: block;
+  }
+}
+  
+
+@media (max-width: 600px) {
+  
+  .footer {
+    height: 1000px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .direitos-reservados {
+    font-size: 10px;
+  }
+
+}
+
+/*FIM FOOTER*/
