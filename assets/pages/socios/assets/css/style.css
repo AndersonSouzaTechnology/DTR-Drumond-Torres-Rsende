@@ -1,0 +1,1396 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*CONFIGURAÇÕES*/
+
+:root {
+
+  /*CORES*/
+
+  --cor-1: #083045;
+  --cor-2: #113E52;
+  --cor-3: #1D698C;
+  --cor-4: #A8623F;
+  --cor-5: #DFE1E6;
+  --cor-6: #000000;
+  --cor-7: #ffffff;
+
+  /*FONT FAMILY*/
+
+  --manrope: 'Manrope'
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--manrope);
+}
+
+/*MENU MOBILE*/
+
+.div-header .menu-mobile .nav-mobile .logo-menu-mobile {
+  width: 180px;
+  position: relative;
+  right: 150px;
+  bottom: 20px;
+}
+
+.btn-abrir-menu {
+  display: none;
+}
+
+.btn-abrir-menu i {
+  color: var(--cor-1);
+  font-size: 30px;
+}
+
+.btn-fechar {
+  padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+  /*ICONE MENU HAMBURGER*/
+  color: var(--cor-1);
+  font-size: 30px;
+}
+
+.menu-mobile {
+  background-color: var(--cor-5);
+  height: 60vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 0%;
+  text-align: right;
+  overflow: hidden;
+  transition: .2s;
+}
+
+.menu-mobile.abrir-menu {
+  /*Abre o menu mobile*/
+  width: 100%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+  /*Aciona o overlay*/
+  display: block;
+}
+
+.menu-mobile nav.nav-mobile ul {
+  text-align: left;
+  list-style: none
+}
+
+.menu-mobile nav.nav-mobile ul li a {
+  text-decoration: none;
+  color: var(--cor-1);
+  font-family: var(--manrope);
+  font-size: 20px;
+  line-height: 1;
+  padding: 20px 4%;
+  display: block;
+}
+
+.menu-mobile nav.nav-mobile ul li a:hover {
+  background-color: var(--cor-1);
+  color: var(--cor-7);
+}
+
+.overlay-menu {
+  background-color: #000000a6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+/* FIM MENU MOBILE*/
+
+
+/*HEADER*/
+
+header {
+  background-color: var(--cor-5);
+  border-bottom: solid 1px var(--cor-1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.div-header {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+header a img {
+  width: 200px;
+}
+
+header .ul_menu li {
+  list-style: none;
+}
+
+header .ul_menu li a {
+  text-decoration: none;
+  font-family: var(--manrope);
+  font-size: 15px;
+  color: var(--cor-1);
+  font-weight: 600;
+}
+
+header nav.nav-bar .ul_menu li a:hover {
+  color: var(--cor-4);
+}
+
+header nav.nav-bar .ul_menu {
+  display: flex;
+  gap: 50px;
+}
+
+header .menu-redes-sociais ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header .menu-redes-sociais ion-icon {
+  color: #ffffff;
+  background-color: #083045;
+  border: solid 5px #083045;
+  border-radius: 50px;
+}
+
+header .menu-redes-sociais .linkedin ion-icon {
+  color: #083045;
+  background-color: #ffffff;
+  border: solid 0px #ffffff;
+  border-radius: 100%;
+  font-size: 25px;
+}
+
+header a .button-menu {
+  background-color: var(--cor-5);
+  border: solid 1px var(--cor-1);
+  border-radius: 25px;
+  padding: 10px 20PX;
+  font-family: var(--manrope);
+  font-size: 15PX;
+  transition: .3S;
+  cursor: pointer;
+}
+
+header a .button-menu:hover {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+  border: var(--cor-7);
+}
+
+/*FIM HEADER*/
+
+/* BANNER */
+
+.banner h1 span {
+  color: var(--cor-4);
+}
+
+.banner h1 {
+  font-family: var(--manrope);
+  position: absolute;
+  top: 200px;
+  left: 30%;
+  transform: translateX(-50%);
+  text-align: left;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.banner {
+  background-image: url(../imagens/Design-sem-nome-24-e1723985710975\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  height: 500PX;
+  margin-top: -21px;
+}
+
+/* Camada de opacidade sobre o banner */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  height: 571px;
+  background-color: #083045;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+
+
+/* Responsividade */
+/* banner */
+@media (max-width: 1024px) {
+  .banner {
+    height: 400px;
+  }
+
+  .overlay {
+    height: 470px;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+    /* top: 150px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    height: 350px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .overlay {
+    height: 350px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    top: 160px;
+  }
+}
+
+/* FIM BANNER */
+
+
+/* SOCIOS */
+
+/*socio thomaz*/
+.background-container {
+  background-color: var(--cor-5);
+  font-family: var(--manrope);
+  position: relative;
+  height: 1750px;
+  /* max-width: 800px; */
+  overflow: hidden;
+}
+
+.socios .h2-socios {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 44px;
+  color: var(--cor-1);
+}
+
+.div-h2-socios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divisor-escritorio {
+  position: relative;
+  margin-top: 30px;
+  /* left: 650px; */
+  display: block;
+  width: 180px;
+  height: 3px;
+  background-color: var(--cor-4);
+  margin-bottom: 30px;
+}
+
+.divisor-escritorio-thomaz {
+  position: relative;
+  /* margin-top: 10px; */
+  left: 0px;
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: var(--cor-4);
+  margin-bottom: 30px;
+}
+
+.text-div .formação {
+  font-size: 23px;
+}
+
+
+.background-container::before {
+  content: "";
+  background-image: url('../imagens/Design-sem-nome-25-2.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.04;
+  z-index: 1;
+}
+
+.content-wrapper,
+.extra-texts {
+  position: relative;
+  z-index: 2;
+}
+
+.content-wrapper {
+  color: var(--cor-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 50px;
+}
+
+.image-div img {
+  width: 400px;
+  height: auto;
+  /* border-radius: 10px; */
+}
+
+.text-div {
+  color: var(--cor-1);
+  max-width: 600px;
+}
+
+.text-div h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-div ul {
+  padding: 0x 40px;
+}
+
+.text-div li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.extra-texts {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.text-block {
+  width: 45%;
+  padding: 0 25px;
+}
+
+.text-block-experiencia {
+  color: var(--cor-1);
+  line-height: 1.6;
+}
+
+.text-block h3 {
+  color: var(--cor-1);
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.text-block li {
+  color: var(--cor-1);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* RESPONSIVO */
+/* SOCIOS */
+/*socio thomaz*/
+@media (max-width: 1350px) {
+
+  .background-container {
+    height: 2320px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-div img {
+    width: 300px;
+  }
+
+  .text-div {
+    max-width: 100%;
+  }
+
+  .extra-texts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-block,
+  .text-block-experiencia {
+    width: 100%;
+  }
+
+  .text-div ul,
+  .text-block ul {
+    padding: 0 20px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-div img {
+    width: 300px;
+  }
+
+  .text-div {
+    max-width: 100%;
+  }
+
+  .extra-texts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-block,
+  .text-block-experiencia {
+    width: 100%;
+  }
+
+  .text-div ul,
+  .text-block ul {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 930px) {
+  
+  .background-container {
+    height: 2520px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-div img {
+    width: 300px;
+  }
+
+  .text-div {
+    max-width: 100%;
+  }
+
+  .extra-texts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-block,
+  .text-block-experiencia {
+    width: 100%;
+  }
+
+  .text-div ul,
+  .text-block ul {
+    padding: 0 20px;
+  }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  .h2-socios {
+    font-size: 36px;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .image-div img {
+    width: 250px;
+  }
+
+  .text-div h2 {
+    font-size: 24px;
+  }
+
+  .text-div ul,
+  .text-block ul {
+    padding: 0 20px;
+  }
+
+  .text-block h3 {
+    font-size: 22px;
+  }
+}
+
+/* Para telas menores que 680px */
+@media (max-width: 680px) {
+
+  .background-container {
+    height: 2350px;
+  }
+
+  .socios .h2-socios {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: var(--cor-1);
+  }
+
+  .text-div h2 {
+    font-size: 22px;
+  }
+  
+  .text-div .formação {
+    font-size: 18px;
+  }
+
+  .socios .divisor-escritorio {
+    width: 100px;
+  }
+
+
+  .image-div img {
+    width: 200px;
+  }
+
+  .text-div ul,
+  .text-block ul {
+    padding: 0 20px;
+  }
+
+  .text-block h3 {
+    font-size: 18px;
+  }
+
+  .text-div li,
+  .text-block li {
+    font-size: 14px;
+  }
+}
+/* Para telas menores que 588px */
+@media (max-width: 588px) {
+
+  .background-container {
+    height: 2600px;
+  }
+
+}
+/* Para telas menores que 588px */
+@media (max-width: 520px) {
+
+  .background-container {
+    height: 2700px;
+  }
+
+}
+
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+
+  .background-container {
+    height: 3270px;
+  }
+
+  .socios .h2-socios {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: var(--cor-1);
+  }
+
+  .text-div h2 {
+    font-size: 22px;
+  }
+  
+  .text-div .formação {
+    font-size: 18px;
+  }
+
+  .socios .divisor-escritorio {
+    width: 100px;
+  }
+
+
+  .image-div img {
+    width: 200px;
+  }
+
+  .text-div ul,
+  .text-block ul {
+    padding: 0 20px;
+  }
+
+  .text-block h3 {
+    font-size: 18px;
+  }
+
+  .text-div li,
+  .text-block li {
+    font-size: 14px;
+  }
+}
+
+/*fim socio thomaz*/
+
+/* socio thiago*/
+
+
+.background-container-thiago {
+  background-color: var(--cor-4);
+  font-family: var(--manrope);
+  position: relative;
+  height: 1200px;
+  color: var(--cor-7);
+  overflow: hidden;
+}
+
+.background-container-thiago::before {
+  content: "";
+  background-image: url('../imagens/Design-sem-nome-28-1.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  /* Absoluto para cobrir todo o container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Fica abaixo de todo o conteúdo */
+  opacity: 0.4;
+  /* Opacidade da imagem de fundo */
+}
+
+.background-container-thiago::after {
+  content: "";
+  background-color: rgba(168, 98, 63, 0.8);
+  /* Cor #A8623F com opacidade de 70% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Camada de sobreposição com cor acima da imagem de fundo */
+}
+
+.content-wrapper-thiago,
+.extra-texts-thiago {
+  position: relative;
+  z-index: 2;
+  /* Conteúdo principal acima da sobreposição */
+}
+
+.divisor-escritorio-thiogo {
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: var(--cor-7);
+  margin-bottom: 30px;
+}
+
+.text-div-thiago .formação {
+  font-size: 23px;
+}
+
+.socio-thiago {
+  display: grid;
+  padding: 50px;
+  z-index: 2;
+}
+
+.imagem-thiago {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 80px;
+  z-index: 2;
+}
+
+.image-div-thiago img {
+  width: 400px;
+  height: auto;
+  position: relative;
+  right: 20%;
+}
+
+.text-div-thiago {
+  max-width: 600px;
+}
+
+.text-div-thiago h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-div-thiago ul {
+  padding: 0 50px;
+}
+
+.text-div-thiago li {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-block-thiago {
+  max-width: 600px;
+}
+
+/* .text-block-experiencia-thiago {
+  color: var(--cor-1);
+  line-height: 1.6;
+} */
+
+.text-block-thiago h3 {
+  color: var(--cor-7);
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.text-block-thiago ul {
+  padding: 0 50px;
+}
+
+.text-block-thiago li {
+  color: var(--cor-7);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+/* Estilos responsivos */
+/* Para telas menores que 1200px (tablets e desktops menores) */
+@media (max-width: 1280px) {
+
+  .background-container-thiago {
+    height: 1650px;
+  }
+
+  .imagem-thiago {
+    grid-template-columns: 1fr;
+  }
+
+  .image-div-thiago img {
+    width: 300px;
+    right: 0;
+  }
+
+  .text-div-thiago ul,
+  .text-block-thiago ul {
+    padding: 0 30px;
+  }
+}
+/* Para telas menores que 1200px (tablets e desktops menores) */
+@media (max-width: 1200px) {
+  .imagem-thiago {
+    grid-template-columns: 1fr;
+  }
+
+  .image-div-thiago img {
+    width: 300px;
+    right: 0;
+  }
+
+  .text-div-thiago ul,
+  .text-block-thiago ul {
+    padding: 0 30px;
+  }
+}
+
+/* Para telas menores que 800px (tablets e celulares) */
+@media (max-width: 800px) {
+
+  .background-container-thiago {
+    height: 1750px;
+  }
+
+}
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+
+  .background-container-thiago {
+    height: 1550px;
+  }
+
+  .socio-thiago {
+    padding: 20px;
+  }
+
+  .imagem-thiago {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .image-div-thiago img {
+    width: 250px;
+    margin: 0 auto;
+    right: 0;
+  }
+
+  .text-div-thiago {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .text-block-thiago {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .text-div-thiago h2 {
+    font-size: 24px;
+  }
+
+  .text-div-thiago ul,
+  .text-block-thiago ul {
+    padding: 0 20px;
+  }
+
+  .text-div-thiago li,
+  .text-block-thiago li {
+    font-size: 14px;
+  }
+
+  .text-block-thiago h3 {
+    font-size: 18px;
+  }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+
+  .background-container-thiago {
+    height: 1650px;
+  }
+
+  .text-div-thiago h2 {
+    font-size: 22px;
+    padding-top: 30px;
+  }
+
+  .text-div-thiago ul,
+  .text-block-thiago ul {
+    padding: 0 5px;
+  }
+
+  .text-div-thiago li,
+  .text-block-thiago li {
+    font-size: 14px;
+  }
+
+  .text-div-thiago .formação {
+    font-size: 18px;
+  }
+
+  .text-block-thiago h3 {
+    font-size: 18px;
+  }
+
+  .image-div-thiago img {
+    width: 200px;
+  }
+
+  .divisor-escritorio-thiogo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/*fim socio thiago*/
+
+
+/*socia karla*/
+.background-container-karla {
+  background-color: var(--cor-1);
+  font-family: var(--manrope);
+  position: relative;
+  height: auto;
+  color: var(--cor-7);
+  overflow: hidden;
+}
+
+.background-container-karla::before {
+  content: "";
+  background-image: url('../imagens/Design-sem-nome-26-1.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  /* Absoluto para cobrir todo o container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Fica abaixo de todo o conteúdo */
+  opacity: 0.4;
+  /* Opacidade da imagem de fundo */
+}
+
+.background-container-karla::after {
+  content: "";
+  background-color: rgba(8, 48, 69, 0.9);
+  /* Cor #083045 com opacidade de 70% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Camada de sobreposição com cor acima da imagem de fundo */
+}
+
+.socio-karla {
+  position: relative;
+  z-index: 2;
+  /* Conteúdo principal acima da sobreposição */
+}
+
+.divisor-escritorio-karla {
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: var(--cor-4);
+  margin-bottom: 30px;
+}
+
+.text-div-karla .formação {
+  font-size: 23px;
+}
+
+.div-socio-karla {
+  display: grid;
+  padding: 50px;
+  z-index: 2;
+}
+
+.socio-karla {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 80px;
+  z-index: 2;
+}
+
+.socio-karla img {
+  width: 340px;
+  height: auto;
+  position: relative;
+  bottom: 100px;
+  /* right: 20%; */
+}
+
+.text-div-karla {
+  max-width: 550px;
+}
+
+.text-div-karla h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-div-karla ul {
+  padding: 0 50px;
+}
+
+.text-div-karla li {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-div-karla h3 {
+  color: var(--cor-7);
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.text-div-karla ul {
+  padding: 0 50px;
+}
+
+.text-div-karla li {
+  color: var(--cor-7);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-div-karla a span {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+
+  color: var(--cor-4);
+  margin-top: 8px;
+  transition: .6s ease;
+}
+
+.text-div-karla a span:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--cor-4);
+  margin-top: 8px;
+  transform: scale(1.05);
+}
+
+
+/* Responsividade */
+@media (max-width: 1280px) {
+
+  /* .background-container-karla {
+    height: 1300px;
+  } */
+  
+  .socio-karla {
+    grid-template-columns: 1fr;
+    padding: 20px 40px;
+  }
+
+  .socio-karla img {
+    width: 300px;
+    padding-top: 80px;
+  }
+
+  .text-div-karla {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .socio-karla {
+    grid-template-columns: 1fr;
+    padding: 20px 40px;
+  }
+
+  .socio-karla img {
+    width: 300px;
+  }
+
+  .text-div-karla {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .socio-karla {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .socio-karla img {
+    width: 250px;
+  }
+
+  .text-div-karla ul {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .background-container-karla {
+    height: 1200px;
+  }
+
+  .socio-karla img {
+    margin-top: 40PX;
+    width: 200px;
+    bottom: 20px;
+  }
+
+  .div-socio-karla {
+    padding: 0px;
+  }
+  
+  .socio-karla {
+
+    padding: 20px 50px;
+    
+  }
+
+  .text-div-karla ul {
+    padding: 0 1px;
+  }
+
+  .text-div-karla li {
+    font-size: 12px;
+  }
+
+  .text-div-karla .formação {
+    color: var(--cor-7);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+/*fim socia karla*/
+
+
+
+/* FIM SOCIOS */
+
+/* FOOTER */
+
+.footer {
+  font-family: var(--manrope);
+  color: var(--cor-7);
+  background-color: var(--cor-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 330px;
+}
+
+.footer-div {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-div img {
+  width: 250px;
+  position: relative;
+  bottom: 13px;
+}
+
+footer .footer .menu-footer nav ul li {
+  list-style: none;
+}
+
+footer .footer .menu-footer,
+.enderecos,
+.fale-conosco,
+.footer-redes-sociais,
+h3 {
+  margin-bottom: 20px;
+}
+
+footer .footer .menu-footer nav ul li a {
+  text-decoration: none;
+  color: var(--cor-7);
+  line-height: 1.6;
+}
+
+footer .footer .menu-footer nav ul li a:hover {
+  color: var(--cor-4);
+}
+
+.enderecos,
+.fale-conosco,
+address {
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.button-acao-footer {
+  background-color: transparent;
+  border: solid 1px var(--cor-7);
+  border-radius: 25PX;
+  color: var(--cor-7);
+  padding: 10px 25px;
+  margin-top: 20PX;
+}
+
+.button-acao-footer:hover {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+}
+
+.footer-icones-sociais {
+  position: relative;
+  right: 14px;
+}
+
+.footer-icones-sociais i {
+  color: var(--cor-7);
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.direitos-reservados {
+  font-family: var(--manrope);
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.webaqui {
+  text-decoration: none;
+  color: var(--cor-7);
+  font-size: 13px;
+}
+
+/*FIM FOOTER*/
+
+
+
+
+/* RESPONSIVIDADE */
+
+/*HEADER*/
+@media (max-width: 768px) {
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .div-header {
+    width: 350px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .menu-redes-sociais {
+    display: none;
+  }
+
+  .button-menu {
+    display: none;
+  }
+
+  .div-header a img {
+    width: 80%;
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 950px) {
+
+  .div-header {
+    justify-content: left;
+    gap: 50px;
+  }
+
+  .menu-redes-sociais,
+  .button-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1110px) {
+
+  .menu-redes-sociais,
+  .button-menu {
+    display: none;
+  }
+}
+
+/*FIM HEADER*/
+
+
+
+/*FOOTER*/
+
+@media (max-width: 1090px) {
+  .footer-redes-sociais {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .footer-div .fale-conosco {
+    display: none;
+  }
+}
+
+@media (max-width: 786px) {
+
+  .footer {
+    height: 1000px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-redes-sociais {
+    display: block;
+  }
+
+  footer .footer-div .fale-conosco {
+    display: block;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .footer {
+    height: 1000px;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .direitos-reservados {
+    font-size: 10px;
+  }
+
+}
+
+/*FIM FOOTER*/
