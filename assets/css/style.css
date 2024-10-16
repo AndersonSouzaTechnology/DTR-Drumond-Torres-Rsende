@@ -26,29 +26,6 @@
   box-sizing: border-box;
 }
 
-/* .hamburger {
-  /*MENU HAMBURGER
-  display: none;
-  border: none;
-  background: none;
-  border-top: 3px solid var(--cor-1);
-  cursor: pointer;
-} */
-
-/* .hamburger::after,
-.hamburger::before {
-  /*MENU HAMBURGER
-  content: " ";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: var(--cor-1);
-  margin-top: 5px;
-  position: relative;
-  transition: 0.3s;
-} */
-
-
 /*MENU MOBILE*/
 
 .div-header .menu-mobile .nav-mobile .logo-menu-mobile {
@@ -771,7 +748,7 @@ footer .footer .menu-footer nav ul li a:hover {
   padding: 5px;
 }
 
-@media (max-width: 1090px) {
+/* @media (max-width: 1090px) {
   .footer-redes-sociais {
     display: none;
   }
@@ -819,7 +796,7 @@ footer .footer .menu-footer nav ul li a:hover {
     font-size: 10px;
   }
 
-}
+} */
 
 
 /* FIM FOOTER */
@@ -883,10 +860,6 @@ footer .footer .menu-footer nav ul li a:hover {
 
 /*BANNER*/
 @media (max-width: 600px) {
-  /*body {
-    height: auto;  Para garantir que o conteúdo não ultrapasse a tela */
-  /* padding: 10px; 
-  }*/
 
   /* Ajuste do tamanho do contêiner do carrossel para telas menores */
   .banner {
@@ -1066,13 +1039,6 @@ footer .footer .menu-footer nav ul li a:hover {
 
 
 /*SOCIOS*/
-
-
-/* @media (min-width: 1024px) {
-  .section-socios {
-    height: 1200px;
-  } 
-}*/
 
 /* Responsividade para telas menores que 1024px (tablets e desktops pequenos) */
 @media (max-width: 1024px) {

@@ -178,6 +178,7 @@ header .menu-redes-sociais .linkedin ion-icon {
 }
 
 header a .button-menu {
+  color: var(--cor-1);
   background-color: var(--cor-5);
   border: solid 1px var(--cor-1);
   border-radius: 25px;
