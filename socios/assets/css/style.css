@@ -111,6 +111,8 @@
 /* FIM MENU MOBILE*/
 
 
+
+
 /*HEADER*/
 
 header {
@@ -197,6 +199,9 @@ header a .button-menu:hover {
 
 /*FIM HEADER*/
 
+
+
+
 /* BANNER */
 
 .banner h1 span {
@@ -240,57 +245,9 @@ header a .button-menu:hover {
   z-index: 1;
 }
 
-
-
-/* Responsividade */
-/* banner */
-@media (max-width: 1024px) {
-  .banner {
-    height: 400px;
-  }
-
-  .overlay {
-    height: 470px;
-  }
-
-  .banner h1 {
-    font-size: 2.5rem;
-    /* top: 150px; */
-  }
-}
-
-@media (max-width: 768px) {
-  .overlay {
-    height: 350px;
-  }
-
-  .banner {
-    height: 300px;
-  }
-
-  .banner h1 {
-    font-size: 2rem;
-    top: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .overlay {
-    height: 350px;
-  }
-
-  .banner {
-    height: 300px;
-  }
-
-  .banner h1 {
-    font-size: 1.5rem;
-    top: 160px;
-  }
-}
-
 /* FIM BANNER */
+
+
 
 
 /* SOCIOS */
@@ -377,7 +334,6 @@ header a .button-menu:hover {
 .image-div img {
   width: 400px;
   height: auto;
-  /* border-radius: 10px; */
 }
 
 .text-div {
@@ -428,6 +384,486 @@ header a .button-menu:hover {
   font-size: 16px;
   line-height: 1.6;
 }
+/*fim socio thomaz*/
+
+
+
+
+/* socio thiago*/
+.background-container-thiago {
+  background-color: var(--cor-4);
+  font-family: var(--manrope);
+  position: relative;
+  height: 1200px;
+  color: var(--cor-7);
+  overflow: hidden;
+}
+
+.background-container-thiago::before {
+  content: "";
+  background-image: url('../imagens/Design-sem-nome-28-1.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  /* Absoluto para cobrir todo o container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Fica abaixo de todo o conteúdo */
+  opacity: 0.4;
+  /* Opacidade da imagem de fundo */
+}
+
+.background-container-thiago::after {
+  content: "";
+  background-color: rgba(168, 98, 63, 0.8);
+  /* Cor #A8623F com opacidade de 70% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Camada de sobreposição com cor acima da imagem de fundo */
+}
+
+.content-wrapper-thiago,
+.extra-texts-thiago {
+  position: relative;
+  z-index: 2;
+  /* Conteúdo principal acima da sobreposição */
+}
+
+.divisor-escritorio-thiogo {
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: var(--cor-7);
+  margin-bottom: 30px;
+}
+
+.text-div-thiago .formação {
+  font-size: 23px;
+}
+
+.socio-thiago {
+  display: grid;
+  padding: 50px;
+  z-index: 2;
+}
+
+.imagem-thiago {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 80px;
+  z-index: 2;
+}
+
+.image-div-thiago img {
+  width: 400px;
+  height: auto;
+  position: relative;
+  right: 20%;
+}
+
+.text-div-thiago {
+  max-width: 600px;
+}
+
+.text-div-thiago h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-div-thiago ul {
+  padding: 0 50px;
+}
+
+.text-div-thiago li {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-block-thiago {
+  max-width: 600px;
+}
+
+.text-block-thiago h3 {
+  color: var(--cor-7);
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.text-block-thiago ul {
+  padding: 0 50px;
+}
+
+.text-block-thiago li {
+  color: var(--cor-7);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/*fim socio thiago*/
+
+
+
+
+/*socia karla*/
+.background-container-karla {
+  background-color: var(--cor-1);
+  font-family: var(--manrope);
+  position: relative;
+  height: auto;
+  color: var(--cor-7);
+  overflow: hidden;
+}
+
+.background-container-karla::before {
+  content: "";
+  background-image: url('../imagens/Design-sem-nome-26-1.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  /* Absoluto para cobrir todo o container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Fica abaixo de todo o conteúdo */
+  opacity: 0.4;
+  /* Opacidade da imagem de fundo */
+}
+
+.background-container-karla::after {
+  content: "";
+  background-color: rgba(8, 48, 69, 0.9);
+  /* Cor #083045 com opacidade de 70% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Camada de sobreposição com cor acima da imagem de fundo */
+}
+
+.socio-karla {
+  position: relative;
+  z-index: 2;
+  /* Conteúdo principal acima da sobreposição */
+}
+
+.divisor-escritorio-karla {
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: var(--cor-4);
+  margin-bottom: 30px;
+}
+
+.text-div-karla .formação {
+  font-size: 23px;
+}
+
+.div-socio-karla {
+  display: grid;
+  padding: 50px;
+  z-index: 2;
+}
+
+.socio-karla {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 80px;
+  z-index: 2;
+}
+
+.socio-karla img {
+  width: 340px;
+  height: auto;
+  position: relative;
+  bottom: 100px;
+}
+
+.text-div-karla {
+  max-width: 550px;
+}
+
+.text-div-karla h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-div-karla ul {
+  padding: 0 50px;
+}
+
+.text-div-karla li {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-div-karla h3 {
+  color: var(--cor-7);
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.text-div-karla ul {
+  padding: 0 50px;
+}
+
+.text-div-karla li {
+  color: var(--cor-7);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-div-karla a span {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+
+  color: var(--cor-4);
+  margin-top: 8px;
+  transition: .6s ease;
+}
+
+.text-div-karla a span:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--cor-4);
+  margin-top: 8px;
+  transform: scale(1.05);
+}
+
+/* FIM SOCIOS */
+
+
+
+
+/* FOOTER */
+
+.footer {
+  font-family: var(--manrope);
+  color: var(--cor-7);
+  background-color: var(--cor-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 330px;
+}
+
+.footer-div {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-div img {
+  width: 250px;
+  position: relative;
+  bottom: 13px;
+}
+
+footer .footer .menu-footer nav ul li {
+  list-style: none;
+}
+
+footer .footer .menu-footer,
+.enderecos,
+.fale-conosco,
+.footer-redes-sociais,
+h3 {
+  margin-bottom: 20px;
+}
+
+footer .footer .menu-footer nav ul li a {
+  text-decoration: none;
+  color: var(--cor-7);
+  line-height: 1.6;
+}
+
+footer .footer .menu-footer nav ul li a:hover {
+  color: var(--cor-4);
+}
+
+.enderecos,
+.fale-conosco,
+address {
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.button-acao-footer {
+  background-color: transparent;
+  border: solid 1px var(--cor-7);
+  border-radius: 25PX;
+  color: var(--cor-7);
+  padding: 10px 25px;
+  margin-top: 20PX;
+}
+
+.button-acao-footer:hover {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+}
+
+.footer-icones-sociais {
+  position: relative;
+  right: 14px;
+}
+
+.footer-icones-sociais i {
+  color: var(--cor-7);
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.direitos-reservados {
+  font-family: var(--manrope);
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.webaqui {
+  text-decoration: none;
+  color: var(--cor-7);
+  font-size: 13px;
+}
+
+/*FIM FOOTER*/
+
+
+
+
+/* RESPONSIVIDADE */
+
+/*HEADER*/
+@media (max-width: 768px) {
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .div-header {
+    width: 350px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .menu-redes-sociais {
+    display: none;
+  }
+
+  .button-menu {
+    display: none;
+  }
+
+  .div-header a img {
+    width: 80%;
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 950px) {
+
+  .div-header {
+    justify-content: left;
+    gap: 50px;
+  }
+
+  .menu-redes-sociais,
+  .button-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1110px) {
+
+  .menu-redes-sociais,
+  .button-menu {
+    display: none;
+  }
+}
+
+/*FIM HEADER*/
+
+
+/* Responsividade */
+/* banner */
+@media (max-width: 1024px) {
+  .banner {
+    height: 400px;
+  }
+
+  .overlay {
+    height: 470px;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+    /* top: 150px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    height: 350px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .overlay {
+    height: 350px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    top: 160px;
+  }
+}
+
+/* FIM BANNER */
 
 
 /* RESPONSIVO */
@@ -651,7 +1087,6 @@ header a .button-menu:hover {
     width: 100px;
   }
 
-
   .image-div img {
     width: 200px;
   }
@@ -670,145 +1105,13 @@ header a .button-menu:hover {
     font-size: 14px;
   }
 }
-
 /*fim socio thomaz*/
 
+
+
 /* socio thiago*/
-
-
-.background-container-thiago {
-  background-color: var(--cor-4);
-  font-family: var(--manrope);
-  position: relative;
-  height: 1200px;
-  color: var(--cor-7);
-  overflow: hidden;
-}
-
-.background-container-thiago::before {
-  content: "";
-  background-image: url('../imagens/Design-sem-nome-28-1.png');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  /* Absoluto para cobrir todo o container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  /* Fica abaixo de todo o conteúdo */
-  opacity: 0.4;
-  /* Opacidade da imagem de fundo */
-}
-
-.background-container-thiago::after {
-  content: "";
-  background-color: rgba(168, 98, 63, 0.8);
-  /* Cor #A8623F com opacidade de 70% */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  /* Camada de sobreposição com cor acima da imagem de fundo */
-}
-
-.content-wrapper-thiago,
-.extra-texts-thiago {
-  position: relative;
-  z-index: 2;
-  /* Conteúdo principal acima da sobreposição */
-}
-
-.divisor-escritorio-thiogo {
-  position: relative;
-  left: 0px;
-  display: block;
-  width: 120px;
-  height: 3px;
-  background-color: var(--cor-7);
-  margin-bottom: 30px;
-}
-
-.text-div-thiago .formação {
-  font-size: 23px;
-}
-
-.socio-thiago {
-  display: grid;
-  padding: 50px;
-  z-index: 2;
-}
-
-.imagem-thiago {
-  display: grid;
-  grid-template-columns: 600px 600px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  padding: 20px 80px;
-  z-index: 2;
-}
-
-.image-div-thiago img {
-  width: 400px;
-  height: auto;
-  position: relative;
-  right: 20%;
-}
-
-.text-div-thiago {
-  max-width: 600px;
-}
-
-.text-div-thiago h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.text-div-thiago ul {
-  padding: 0 50px;
-}
-
-.text-div-thiago li {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-.text-block-thiago {
-  max-width: 600px;
-}
-
-/* .text-block-experiencia-thiago {
-  color: var(--cor-1);
-  line-height: 1.6;
-} */
-
-.text-block-thiago h3 {
-  color: var(--cor-7);
-  font-size: 24px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.text-block-thiago ul {
-  padding: 0 50px;
-}
-
-.text-block-thiago li {
-  color: var(--cor-7);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-
-
 /* Estilos responsivos */
-/* Para telas menores que 1200px (tablets e desktops menores) */
+/* Para telas menores que 1280px (tablets e desktops menores) */
 @media (max-width: 1280px) {
 
   .background-container-thiago {
@@ -938,6 +1241,7 @@ header a .button-menu:hover {
 
   .image-div-thiago img {
     width: 200px;
+    padding-top: 20px;
   }
 
   .divisor-escritorio-thiogo {
@@ -945,152 +1249,11 @@ header a .button-menu:hover {
     margin-bottom: 20px;
   }
 }
-
-
-
 /*fim socio thiago*/
 
 
-/*socia karla*/
-.background-container-karla {
-  background-color: var(--cor-1);
-  font-family: var(--manrope);
-  position: relative;
-  height: auto;
-  color: var(--cor-7);
-  overflow: hidden;
-}
 
-.background-container-karla::before {
-  content: "";
-  background-image: url('../imagens/Design-sem-nome-26-1.png');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  /* Absoluto para cobrir todo o container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  /* Fica abaixo de todo o conteúdo */
-  opacity: 0.4;
-  /* Opacidade da imagem de fundo */
-}
-
-.background-container-karla::after {
-  content: "";
-  background-color: rgba(8, 48, 69, 0.9);
-  /* Cor #083045 com opacidade de 70% */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  /* Camada de sobreposição com cor acima da imagem de fundo */
-}
-
-.socio-karla {
-  position: relative;
-  z-index: 2;
-  /* Conteúdo principal acima da sobreposição */
-}
-
-.divisor-escritorio-karla {
-  position: relative;
-  left: 0px;
-  display: block;
-  width: 120px;
-  height: 3px;
-  background-color: var(--cor-4);
-  margin-bottom: 30px;
-}
-
-.text-div-karla .formação {
-  font-size: 23px;
-}
-
-.div-socio-karla {
-  display: grid;
-  padding: 50px;
-  z-index: 2;
-}
-
-.socio-karla {
-  display: grid;
-  grid-template-columns: 600px 600px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  padding: 20px 80px;
-  z-index: 2;
-}
-
-.socio-karla img {
-  width: 340px;
-  height: auto;
-  position: relative;
-  bottom: 100px;
-  /* right: 20%; */
-}
-
-.text-div-karla {
-  max-width: 550px;
-}
-
-.text-div-karla h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.text-div-karla ul {
-  padding: 0 50px;
-}
-
-.text-div-karla li {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-.text-div-karla h3 {
-  color: var(--cor-7);
-  font-size: 24px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.text-div-karla ul {
-  padding: 0 50px;
-}
-
-.text-div-karla li {
-  color: var(--cor-7);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.text-div-karla a span {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
-
-  color: var(--cor-4);
-  margin-top: 8px;
-  transition: .6s ease;
-}
-
-.text-div-karla a span:hover {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--cor-4);
-  margin-top: 8px;
-  transform: scale(1.05);
-}
-
-
+/*fim socia karla*/
 /* Responsividade */
 @media (max-width: 1280px) {
 
@@ -1146,22 +1309,17 @@ header a .button-menu:hover {
 @media (max-width: 480px) {
 
   .background-container-karla {
-    height: 1200px;
+    height: 1100px;
   }
 
   .socio-karla img {
-    margin-top: 40PX;
     width: 200px;
     bottom: 20px;
-  }
-
-  .div-socio-karla {
-    padding: 0px;
   }
   
   .socio-karla {
 
-    padding: 20px 50px;
+    padding: 0 50px 20px;
     
   }
 
@@ -1180,170 +1338,13 @@ header a .button-menu:hover {
     margin-bottom: 15px;
   }
 }
-
 /*fim socia karla*/
 
 
 
-/* FIM SOCIOS */
-
-/* FOOTER */
-
-.footer {
-  font-family: var(--manrope);
-  color: var(--cor-7);
-  background-color: var(--cor-1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 330px;
-}
-
-.footer-div {
-  display: flex;
-  gap: 40px;
-}
-
-.footer-div img {
-  width: 250px;
-  position: relative;
-  bottom: 13px;
-}
-
-footer .footer .menu-footer nav ul li {
-  list-style: none;
-}
-
-footer .footer .menu-footer,
-.enderecos,
-.fale-conosco,
-.footer-redes-sociais,
-h3 {
-  margin-bottom: 20px;
-}
-
-footer .footer .menu-footer nav ul li a {
-  text-decoration: none;
-  color: var(--cor-7);
-  line-height: 1.6;
-}
-
-footer .footer .menu-footer nav ul li a:hover {
-  color: var(--cor-4);
-}
-
-.enderecos,
-.fale-conosco,
-address {
-  font-style: normal;
-  line-height: 1.4;
-}
-
-.button-acao-footer {
-  background-color: transparent;
-  border: solid 1px var(--cor-7);
-  border-radius: 25PX;
-  color: var(--cor-7);
-  padding: 10px 25px;
-  margin-top: 20PX;
-}
-
-.button-acao-footer:hover {
-  background-color: var(--cor-4);
-  color: var(--cor-7);
-}
-
-.footer-icones-sociais {
-  position: relative;
-  right: 14px;
-}
-
-.footer-icones-sociais i {
-  color: var(--cor-7);
-  margin-left: 15px;
-  margin-bottom: 20px;
-}
-
-.direitos-reservados {
-  font-family: var(--manrope);
-  background-color: var(--cor-4);
-  color: var(--cor-7);
-  text-align: center;
-  font-size: 12px;
-  padding: 5px;
-}
-
-.webaqui {
-  text-decoration: none;
-  color: var(--cor-7);
-  font-size: 13px;
-}
-
-/*FIM FOOTER*/
-
-
-
-
-/* RESPONSIVIDADE */
-
-/*HEADER*/
-@media (max-width: 768px) {
-
-  .btn-abrir-menu {
-    display: block;
-  }
-
-  .div-header {
-    width: 350px;
-  }
-
-  .nav-bar {
-    display: none;
-  }
-
-  .menu-redes-sociais {
-    display: none;
-  }
-
-  .button-menu {
-    display: none;
-  }
-
-  .div-header a img {
-    width: 80%;
-    right: 10px;
-  }
-
-}
-
-@media (max-width: 950px) {
-
-  .div-header {
-    justify-content: left;
-    gap: 50px;
-  }
-
-  .menu-redes-sociais,
-  .button-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 1110px) {
-
-  .menu-redes-sociais,
-  .button-menu {
-    display: none;
-  }
-}
-
-/*FIM HEADER*/
-
-
 
 /*FOOTER*/
-
+/*responisvo*/
 @media (max-width: 1090px) {
   .footer-redes-sociais {
     display: none;

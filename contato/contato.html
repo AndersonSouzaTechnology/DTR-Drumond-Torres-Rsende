@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"favicon" icine da aba do navegador-->
+    <link rel="shortcut icon" href="../assets/imagens/Subtítulo (2) (1) (1).png" type="image/png">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="div-header">
+            <a href="#"><img src="assets/imagens/Design sem nome (50) (1).png" alt="logo DTR" class="logo-menu"></a>
+
+            <nav class="nav-bar">
+                <ul class="ul_menu">
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#section-areas-de-atuacao">Áreas de atuação</a></li>
+                    <li><a href="https://dtr.adv.br/socios/">Sócios</a></li>
+                    <li><a href="https://dtr.adv.br/contato/">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-redes-sociais">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com/dtradv/" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="linkedin">
+                        <a href="https://www.linkedin.com/company/dtradv/" class="social-link" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="https://dtr.adv.br/contato/"><button class="button-menu">Agendar
+                    Reunião</button></a>
+
+            <!-- MENU MOBILE -->
+            <div id="btn-menu" class="btn-abrir-menu"><!--Icone do menu hambueger-->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu-mobile" class="menu-mobile"><!--Menu mobile-->
+
+                <div class="btn-fechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <nav class="nav-mobile">
+                    <a href="#"><img src="assets/imagens/Design sem nome (50) (1).png" alt="logo DTR"
+                            class="logo-menu-mobile"></a>
+                    <ul>
+                        <li><a href="#">Página Inicial</a></li>
+                        <li><a href="#section-areas-de-atuacao">Áreas de atuação</a></li>
+                        <li><a href="https://dtr.adv.br/socios/">Sócios</a></li>
+                        <li><a href="https://dtr.adv.br/contato/">Contato</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div id="overlay-menu" class="overlay-menu"></div>
+            <!-- FIM MENU MOBILE -->
+
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- BANNER -->
+    <div class="banner">
+        <h1><span>Experiência</span> <br> Credibilidade <br> Resultado</h1>
+        <div class="overlay"></div>
+    </div>
+    <!-- FIM BANNER -->
+
+    <!-- CONTATO -->
+    <section class="section-contato">
+        <div class="div-h2-contato">
+            <h2 class="h2-contato">
+                Contato
+            </h2>
+            <span class="divisor-contato"></span>
+            <p>
+                Nossa equipe entrará em contato <br> o mais breve possível
+            </p>
+        </div>
+        <div class="div-contatos">
+            <div class="fale-conosco-formulario">
+                <div class="fale-conosco"></div>
+                <h3>Fale Conosco</h3>
+                <address><i class="fa-regular fa-envelope"></i> contato@dtr.adv.br</address>
+                <P>Siga-nos nas redes sociais</P>
+                <div class="contato-icones-sociais">
+                    <a href="https://www.instagram.com/dtradv/" target="_blank" class="contato-redes-sociais"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/dtradv/" target="_blank" class="contato-redes-sociais"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook" class="contato-redes-sociais"></i></a>
+                </div>
+            </div>
+            <div class="form_container" id="idform">
+                <h2>Preencha o Formulário</h2>
+                <form action="assets/php/email.php" method="post" class="contactForm" id="contactForm">
+                    <div class="form-group">
+                        <!-- <label for="name">Nome:</label>  -->
+                        <input type="text" name="text" id="" required placeholder="Seu nome">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="email-tel">
+                        <div class="form-group1">
+                            <!-- <label for="email">E-mail:</label>  -->
+                            <input type="email" name="email" id="" required placeholder="Seu melhor e-mail" class="email">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group2">
+                            <input type="tel" name="tel" id="" placeholder="DDD+Telefone">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <!-- <label for="message">Mensagem:</label>  -->
+                        <textarea id="message" name="message" rows="4" required
+                            placeholder="Deixe uma mensagem."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button class="button_form" type="submit">Entrar em contato</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FIM CONTATO -->
+
+    <!-- MAP E ENDEREÇOS -->
+    <section class="map-enderecos">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.6722297073434!2d-67.81834292583936!3d-9.96120470658157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8dbf3388087f%3A0xfbc15e3f538cc635!2sBig%20Offices!5e0!3m2!1spt-BR!2sbr!4v1729206938549!5m2!1spt-BR!2sbr" width="650" height="358" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="enderecos-map">
+            <address class="acre">
+                Avenida Getúlio Vargas, 1.901, Sala 07, <br>
+                Big Offices Rio Branco/Acre
+            </address>
+            <span class="divisor-enderecos"></span>
+            <address class="mg">
+                Av. Afonso Pena nº 3355, sala 1103, <br>
+                Serra, Belo Horizonte/MG,
+            </address>
+            <span class="divisor-enderecos-mg"></span>
+        </div>
+    </section>
+    <!-- FIM MAP E ENDEREÇOS -->
+
+    <!-- VINCULO DA SOCIEDADE -->
+    <div class="vinculo-sociedade">
+        <i class="fa-solid fa-quote-right"></i>
+        <P>
+            A justiça é o vínculo das sociedades humanas; as leis emanadas da justiça <br> são a alma de um povo.
+        </P>
+        <div class="overlay-vinculo"></div>
+    </div>
+    <!-- FIM VINCULO DA SOCIEDADE -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="footer-div">
+                <a href="#"><img src="assets/imagens/Design-sem-nome-39-e1727286609121.png" alt=""></a>
+                <div class="menu-footer">
+                    <h3>O Escritório</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="https://dtr.adv.br/">Página Inicial</a></li>
+                            <li><a href="#section-areas-de-atuacao">Áreas de atuação</a></li>
+                            <li><a href="https://dtr.adv.br/socios">Sócios</a></li>
+                            <li><a href="https://dtr.adv.br/contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="enderecos">
+                    <h3>Endereços</h3>
+                    <address>
+                        Avenida Getúlio Vargas, 1.901, Sala <br> 07, Big Offices Rio Branco/Acre <br>
+                        OAB/AC 336-ESC
+                    </address>
+                    <br>
+                    <address>
+                        Av. Afonso Pena nº 3355, 11º andar, <br> sala 1103, bairro Serra, Belo <br>
+                        Horizonte/MG, CEP
+                        30130-008
+                    </address>
+                </div>
+                <div class="fale-conosco">
+                    <h3>Fale Conosco</h3>
+                    <address>contato@dtr.adv.br</address>
+                    <a href="https://dtr.adv.br/contato/"><button class="button-acao-footer">Solicitar
+                            Reunião</button></a>
+                </div>
+                <div class="footer-redes-sociais">
+                    <h3>Onde nos encontrar</h3>
+                    <div class="footer-icones-sociais">
+                        <a href="https://www.instagram.com/dtradv/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/dtradv/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="https://www.webaqui.com.br/" target="_blank" class="webaqui"> Desenvolvido por:
+                        <br>
+                        www.webaqui.com.br</a>
+                </div>
+            </div>
+        </div>
+        <div class="direitos-reservados">
+            <p>Copyright 2024 © DTR – Drumond Torres e Resende Advogados – Todos os Direitos Rsevados.</p>
+        </div>
+    </footer>
+
+
+    <!-- FIM FOOTER -->
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
