@@ -413,45 +413,6 @@ header a .button-menu:hover {
   transform: scale(1.05);
   background-color: var(--cor-4);
 }
-
-
-/* Ajustes para dispositivos menores */
-@media (max-width: 940px) {
-  .div-contatos {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .div-contatos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .div-h2-contato p {
-    font-size: 1.5em;
-  }
-
-  .email-tel {
-    display: block;
-  }
-
-  .email-tel .email {
-    margin-bottom: 15px;
-  }
-
-  .fale-conosco-formulario, .form_container {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .form_container form input, 
-  .form_container form textarea, 
-  .form_container form .button_form {
-    width: 100%;
-  }
-}
-
 /* FIM CONTATO */
 
 
@@ -506,22 +467,6 @@ header a .button-menu:hover {
   width: 2.5em;
   height: 1px;
   background-color: var(--cor-4);
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .map-enderecos {
-    flex-direction: column;
-  }
-
-  .map, .enderecos-map {
-    max-width: 100%; /* Ambos ocupam 100% da largura em telas menores */
-    height: auto; /* Ajusta altura para conteúdo em telas menores */
-  }
-
-  .enderecos-map {
-   font-size: 1.5em;
-  }
 }
 /* FIM MAP E ENDEREÇOS */
 
@@ -605,23 +550,74 @@ header a .button-menu:hover {
   background-color: rgba(8, 48, 69, 0.8); /* Cor #083045 com 80% de opacidade */
   z-index: 1; /* A overlay ficará abaixo do conteúdo de texto */
 }
+/* FIM VINCULO DA SOCIEDADE */
 
 
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
 
-  .vinculo-sociedade p {
-    font-size: 1.4em;
-    line-height: 1.4;
-  }
-
+/*LGPB POPUP*/
+/* Estilos do popup LGPD */
+.popup-lgpd {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  border: solid 1px var(--cor-1);
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--cor-5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease;
 }
 
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--cor-1);
+}
+
+.popup-content p {
+  font-size: 0.9em;
+  color: var(--cor-1);
+  margin-bottom: 20px;
+}
+
+.popup-content a {
+  color: var(--cor-4);
+  text-decoration: none;
+}
+
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+.popup-content button {
+  background-color: var(--cor-5);
+  color: var(--cor-4);
+  padding: 10px 20px;
+  border: solid 1px var(--cor-4);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.popup-content button:hover {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+}
+/*FIM LGPB POPUP*/
 
 
-
-/* FIM VINCULO DA SOCIEDADE */
 
 
 /* FOOTER */
@@ -826,6 +822,108 @@ address {
 }
 
 /* FIM BANNER */
+
+
+
+/* CONTATO */
+/* Ajustes para dispositivos menores */
+@media (max-width: 940px) {
+  .div-contatos {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .div-contatos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-h2-contato p {
+    font-size: 1.5em;
+  }
+
+  .email-tel {
+    display: block;
+  }
+
+  .email-tel .email {
+    margin-bottom: 15px;
+  }
+
+  .fale-conosco-formulario, .form_container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .form_container form input, 
+  .form_container form textarea, 
+  .form_container form .button_form {
+    width: 100%;
+  }
+}
+/* FIM CONTATO */
+
+
+
+/* MAP E ENDEREÇOS */
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .map-enderecos {
+    flex-direction: column;
+  }
+
+  .map, .enderecos-map {
+    max-width: 100%; /* Ambos ocupam 100% da largura em telas menores */
+    height: auto; /* Ajusta altura para conteúdo em telas menores */
+  }
+
+  .enderecos-map {
+   font-size: 1.5em;
+  }
+}
+/* FIM MAP E ENDEREÇOS */
+
+
+
+/*VINCULO DA SOCIEDADE*/
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+  .vinculo-sociedade p {
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+
+}
+/*FIM VINCULO DA SOCIEDADE*/
+
+
+
+
+/*POP UP LGPD*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .popup-lgpd {
+      width: 100%;
+      bottom: 0;
+      border-radius: 0;
+  }
+}
+/*FIM POP UP LGPD*/
+
 
 
 

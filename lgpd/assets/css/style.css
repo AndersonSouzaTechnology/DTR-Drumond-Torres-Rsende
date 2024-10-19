@@ -338,62 +338,98 @@ ul {
   width: 100%;
   height: 1px;
   background-color: var(--cor-4);
+  margin-bottom: 20px;
 }
 
 .divisor-article-penultimo {
   margin-top: 40px;
+  display: block;
   margin-bottom: -10px;
   width: 100%;
   height: 1px;
   background-color: var(--cor-4);
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .section-lgpd {
-      padding: 50px 20px;
-  }
-
-  .div-lgpd {
-      padding: 30px;
-  }
-
-  .h2-principal {
-      font-size: 30px;
-  }
-
-  h2, h3 {
-      font-size: 1.5em;
-  }
-
-  ul {
-      margin-left: 20px;
-  }
+.divisor-article-ultimo {
+  /* margin-top: 20px; */
+  display: block;
+  margin-bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--cor-4);
 }
 
-@media (max-width: 480px) {
-  .section-lgpd {
-      padding: 30px 15px;
-  }
-
-  .div-lgpd {
-      padding: 20px;
-  }
-
-  .h2-principal {
-      font-size: 24px;
-  }
-
-  h2, h3 {
-      font-size: 1.2em;
-  }
-
-  ul {
-      margin-left: 15px;
-  }
+.h2-contato {
+  margin-top: 40px;
 }
-
 /* FIM LGPD */
+
+
+
+
+/*LGPB POPUP*/
+/* Estilos do popup LGPD */
+.popup-lgpd {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  border: solid 1px var(--cor-1);
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--cor-5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--cor-1);
+}
+
+.popup-content p {
+  font-size: 0.9em;
+  color: var(--cor-1);
+  margin-bottom: 20px;
+}
+
+.popup-content a {
+  color: var(--cor-4);
+  text-decoration: none;
+}
+
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+.popup-content button {
+  background-color: var(--cor-5);
+  color: var(--cor-4);
+  padding: 10px 20px;
+  border: solid 1px var(--cor-4);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.popup-content button:hover {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+}
+/*FIM LGPB POPUP*/
+
+
 
 
 /* FOOTER */
@@ -406,7 +442,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 350px;
+  height: 332px;
 }
 
 .footer-div {
@@ -415,21 +451,25 @@ ul {
 }
 
 .footer-div img {
-  width: 250px;
-  position: relative;
-  bottom: 13px;
+  width: 200px;
 }
 
 footer .footer .menu-footer nav ul li {
   list-style: none;
+  position: relative;
+  right: 35px;
 }
 
-footer .footer .menu-footer,
-.enderecos,
-.fale-conosco,
-.footer-redes-sociais,
-h3 {
-  margin-bottom: 20px;
+.h3-footer {
+  font-size: 16px;
+}
+
+footer li a, address {
+  font-size: 15px;
+}
+
+footer li a address {
+  margin: 0;
 }
 
 footer .footer .menu-footer nav ul li a {
@@ -605,8 +645,80 @@ address {
     top: 160px;
   }
 }
-
 /* FIM BANNER */
+
+
+/* LGPD */
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .section-lgpd {
+      padding: 50px 20px;
+  }
+
+  .div-lgpd {
+      padding: 30px;
+  }
+
+  .h2-principal {
+      font-size: 30px;
+  }
+
+  h2, h3 {
+      font-size: 1.5em;
+  }
+
+  ul {
+      margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-lgpd {
+      padding: 30px 15px;
+  }
+
+  .div-lgpd {
+      padding: 20px;
+  }
+
+  .h2-principal {
+      font-size: 24px;
+  }
+
+  h2, h3 {
+      font-size: 1.2em;
+  }
+
+  ul {
+      margin-left: 15px;
+  }
+}
+/* FIM LGPD */
+
+
+
+
+/*POP UP LGPD*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .popup-lgpd {
+      width: 100%;
+      bottom: 0;
+      border-radius: 0;
+  }
+}
+/*FIM POP UP LGPD*/
 
 
 
@@ -628,7 +740,7 @@ address {
 @media (max-width: 786px) {
 
   .footer {
-    height: 1000px;
+    height: 1100px;
   }
 
   .footer-div {
@@ -661,6 +773,14 @@ address {
     font-size: 10px;
   }
 
+  footer .footer .menu-footer nav ul li {
+    list-style: none;
+    position: relative;
+    right: 14px;
+  }
+
 }
 
 /*FIM FOOTER*/
+
+

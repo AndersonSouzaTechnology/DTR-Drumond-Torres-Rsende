@@ -397,7 +397,7 @@ header a .button-menu:hover {
 }
 
 section .teste {
-  background-image: url(../imagens/pexels-mikhail-nilov-8847212\ \(3\).jpg);
+  background-image: url(../imagens/pexels-mikhail-nilov-8847212\ \(3\).webp);
   background-size: cover;
   background-position: center;
   /*object-fit: cover;  Ajusta a imagem sem distorção*/
@@ -542,7 +542,7 @@ button:hover {
   display: flex;
   height: 432px;
   width: 100%;
-  background-image: url(../imagens/Design-sem-nome-12\ \(1\).png);
+  background-image: url(../imagens/Design-sem-nome-12\ \(1\).webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -679,8 +679,74 @@ section article .container .direito-empresarial p {
 /* FIM ÁREAS DE ATUAÇÃO */
 
 
-/* FOOTER */
 
+/*LGPB POPUP*/
+/* Estilos do popup LGPD */
+.popup-lgpd {
+  font-family: var(--manrope);
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  border: solid 1px var(--cor-1);
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--cor-5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--cor-1);
+}
+
+.popup-content p {
+  font-size: 0.9em;
+  color: var(--cor-1);
+  margin-bottom: 20px;
+}
+
+.popup-content a {
+  color: var(--cor-4);
+  text-decoration: none;
+}
+
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+.popup-content button {
+  background-color: var(--cor-5);
+  color: var(--cor-4);
+  padding: 10px 20px;
+  border: solid 1px var(--cor-4);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.popup-content button:hover {
+  background-color: var(--cor-4);
+  color: var(--cor-7);
+}
+/*FIM LGPB POPUP*/
+
+
+
+
+/* FOOTER */
 .footer {
   font-family: var(--manrope);
   color: var(--cor-7);
@@ -747,58 +813,6 @@ footer .footer .menu-footer nav ul li a:hover {
   font-size: 12px;
   padding: 5px;
 }
-
-/* @media (max-width: 1090px) {
-  .footer-redes-sociais {
-    display: none;
-  }
-}
-
-@media (max-width: 950px) {
-  footer .footer-div .fale-conosco {
-    display: none;
-  }
-}
-
-@media (max-width: 786px) {
-
-  .footer {
-    height: 1000px;
-  }
-
-  .footer-div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-redes-sociais {
-    display: block;
-  }
-
-  footer .footer-div .fale-conosco {
-    display: block;
-  }
-}
-  
-
-@media (max-width: 600px) {
-  
-  .footer {
-    height: 1000px;
-  }
-
-  .footer-div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .direitos-reservados {
-    font-size: 10px;
-  }
-
-} */
-
-
 /* FIM FOOTER */
 
 
@@ -1279,9 +1293,32 @@ footer .footer .menu-footer nav ul li a:hover {
     width: 90%;
   }
 }
-
-
 /* FIM ÁREAS DE ATUAÇÃO */
+
+
+
+/*POP UP LGPD*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .popup-lgpd {
+      width: 100%;
+      bottom: 0;
+      border-radius: 0;
+  }
+}
+/*FIM POP UP LGPD*/
+
 
 
 
