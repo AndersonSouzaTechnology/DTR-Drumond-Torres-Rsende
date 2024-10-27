@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--"favicon" icine da aba do navegador-->
-    <link rel="shortcut icon" href="assets/imagens/Subtítulo (2) (1).png" type="image/png">
-    <title>Drumond Leitão e Torres Advogados</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <meta name="description"
+        content="Escritório de advocacia,Direito Empresarial & Societário,Tributário,Prevenção de litígios,negociação e mediação,Imobiliário,família e Planejamento sucessório">
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/png">
+    <title>Drumond Torres Resende Advogados</title>
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" onload="this.onload=null;this.rel=apos;stylesheet&apos;" rel="preload"/>
+    <noscript><link href="link do css" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
+
 
 <body>
 
@@ -21,59 +20,63 @@
 
     <header>
         <div class="div-header">
-            <a href="#"><img src="assets/imagens/Design sem nome (50) (1).png" alt="logo DTR" class="logo-menu"></a>
+            <a href="https://dtr.adv.br/"><img src="assets/imagens/logo.png" alt="logo DTR" class="logo-menu"></a>
 
             <nav class="nav-bar">
                 <ul class="ul_menu">
-                    <li><a href="#">Página Inicial</a></li>
-                    <li><a href="#section-areas-de-atuacao">Áreas de atuação</a></li>
-                    <li><a href="https://socios/socios.html">Sócios</a></li>
-                    <li><a href="https://contato/contato.html">Contato</a></li>
+                    <li><a href="https://dtr.adv.br/">Página Inicial</a></li>
+                    <li><a href="https://dtr.adv.br/#areas-de-atuacao">Áreas de atuação</a></li>
+                    <li><a href="https://dtr.adv.br/socios">Sócios</a></li>
+                    <li><a href="https://dtr.adv.br/contato">Contato</a></li>
                 </ul>
             </nav>
 
             <div class="menu-redes-sociais">
                 <ul class="social-list">
                     <li>
-                        <a href="https://www.instagram.com/dtradv/" class="social-link" target="_blank">
-                            <ion-icon name="logo-instagram"></ion-icon>
+                        <a href="https://www.instagram.com/dtradv/" aria-label="instagram da DTR" class="social-link"
+                            target="_blank">
+                            <ion-icon name="logo-instagram" class="instagram-icone"></ion-icon>
                         </a>
                     </li>
                     <li class="linkedin">
-                        <a href="https://www.linkedin.com/company/dtradv/" class="social-link" target="_blank">
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                        <a href="https://www.linkedin.com/company/dtradv/" aria-label="linkedin da DTR"
+                            class="social-link" target="_blank">
+                            <ion-icon name="logo-linkedin" class="linkedin-icone"></ion-icon>
 
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link" target="_blank">
-                            <ion-icon name="logo-facebook"></ion-icon>
+                        <a href="https://dtr.adv.br/" aria-label="página home da DTR" class="social-link"
+                            target="_blank">
+                            <ion-icon name="logo-facebook"  class="facebook-icone"></ion-icon>
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <a href="https://dtr.adv.br/contato/"><button class="button-menu">Agendar
+            <a href="https://dtr.adv.br/contato" aria-label="Agendar Reunião"><button class="button-menu">Agendar
                     Reunião</button></a>
 
             <!-- MENU MOBILE -->
             <div id="btn-menu" class="btn-abrir-menu"><!--Icone do menu hambueger-->
-                <i class="fa-solid fa-bars"></i>
+                <ion-icon name="menu-outline"></ion-icon>
             </div>
 
             <div id="menu-mobile" class="menu-mobile"><!--Menu mobile-->
 
                 <div class="btn-fechar">
-                    <i class="fa-solid fa-xmark"></i>
+                    <ion-icon name="close-outline"></ion-icon>
                 </div>
 
                 <nav class="nav-mobile">
-                    <a href="#"><img src="assets/imagens/Design sem nome (50) (1).png" alt="logo DTR" class="logo-menu-mobile"></a>
+                    <a href="https://dtr.adv.br/"><img src="assets/imagens/logo.png" alt="logo DTR"
+                            class="logo-menu-mobile"></a>
                     <ul>
                         <li><a href="#">Página Inicial</a></li>
-                        <li><a href="#section-areas-de-atuacao">Áreas de atuação</a></li>
-                        <li><a href="https://dtr.adv.br/socios/">Sócios</a></li>
-                        <li><a href="https://dtr.adv.br/contato/">Contato</a></li>
+                        <li><a href="https://dtr.adv.br/#areas-de-atuacao">Áreas de atuação</a></li>
+                        <li><a href="https://dtr.adv.br/socios">Sócios</a></li>
+                        <li><a href="https://dtr.adv.br/contato">Contato</a></li>
                     </ul>
 
                 </nav>
@@ -91,30 +94,25 @@
     <!-- BANNER -->
 
     <section class="banner">
-        <!-- Título fixo -->
         <div class="carousel-title">
             <h1><span>Experiência</span> <br> Credibilidade <br> Resultado</h1>
         </div>
-        <!-- Camada de opacidade sobre os slides -->
         <div class="overlay"></div>
         <div class="carousel">
             <div class="carousel-slides">
-                <!-- Duplicação do último slide para efeito de loop contínuo -->
-                <div class="carousel-slide" style="background-image: url('assets/imagens/banner2.webp');"></div>
-                <!-- Slides reais -->
-                <div class="carousel-slide" style="background-image: url('assets/imagens/banner.webp');"></div>
-                <div class="carousel-slide" style="background-image: url('assets/imagens/baner1.webp');"></div>
-                <div class="carousel-slide" style="background-image: url('assets/imagens/banner2.webp');"></div>
-                <!-- Duplicação do primeiro slide para o efeito de loop contínuo -->
-                <div class="carousel-slide" style="background-image: url('assets/imagens/banner.webp');"></div>
+                <div class="carousel-slide" style="background-image: url('assets/imagens/banner2.jpeg');"></div>
+                <div class="carousel-slide" style="background-image: url('assets/imagens/banner.jpeg');"></div>
+                <div class="carousel-slide" style="background-image: url('assets/imagens/banner1.jpeg');"></div>
+                <div class="carousel-slide" style="background-image: url('assets/imagens/banner2.jpeg');"></div>
+                <div class="carousel-slide" style="background-image: url('assets/imagens/banner.jpeg');"></div>
             </div>
-        </div>
         </div>
     </section>
 
     <!-- FIM BANNER -->
 
-    <!-- NOSSA-VISAO-E-VALORES -->
+    <!-- NOSSA-VISAO-E-VGALORES -->
+
     <section class="nossa-visao-valores">
 
         <div class="divs">
@@ -148,7 +146,7 @@
     <!-- CHAMADA DE AÇÃO -->
     <div class="camada-de-acao1">
         <h2>Entre em contato e solicite uma reunião</h2>
-        <a href="https://dtr.adv.br/contato/"><button>Clique Aqui</button></a>
+        <a href="https://dtr.adv.br/contato"><button>Solicitar reunião</button></a>
     </div>
     <!-- FIM CHAMADA DE AÇÃO -->
 
@@ -186,7 +184,7 @@
                 jurídicos de alta qualidade, com uma equipe dedicada e atuante em diversas áreas do direito, o
                 escritório continua a prezar pela ética, inovação e compromisso com seus clientes.
             </p>
-            <a href="https://dtr.adv.br/contato/"><button>Saiba Mais</button></a>
+            <a href="https://dtr.adv.br/contato"><button>Saiba Mais</button></a>
 
         </div>
     </section>
@@ -199,20 +197,19 @@
             <span class="divisor-socios"></span>
             <div class="div-img-socios">
                 <div class="card">
-                    <a href="https://dtr.adv.br/socios/#thomaz"><img src="assets/imagens/IMG_0164 (2).webp"
+                    <a href="https://dtr.adv.br/socios#thomaz"><img src="assets/imagens/thomaz.jpg"
                             alt="Dr. Thomaz Drumond"></a>
                     <span class="divisor-foto-socios"></span>
                     <h3 class="h3-socios">Thomaz Carneiro Drumond</h3>
                 </div>
                 <div class="card">
-                    <a href="https://dtr.adv.br/socios/#thiago"><img
-                            src="assets/imagens/WhatsApp Image 2024-09-29 at 14.08.47.webp"
+                    <a href="https://dtr.adv.br/socios#thiago"><img src="assets/imagens/thiago.jpeg"
                             alt="Dr. Thiago Almeida"></a>
                     <span class="divisor-foto-socios"></span>
                     <h3 class="h3-socios">Thiago Torres Almeida</h3>
                 </div>
                 <div class="card">
-                    <a href="https://dtr.adv.br/socios/#karla"><img src="assets/imagens/0094 TRATADA (1).webp"
+                    <a href="https://dtr.adv.br/socios#karla"><img src="assets/imagens/karla.jpg"
                             alt="Dr. Karla Resende"></a>
                     <span class="divisor-foto-socios"></span>
                     <h3 class="h3-socios">Karla Resende</h3>
@@ -240,20 +237,20 @@
     <div class="chamada2">
         <div class="overlay2"></div>
         <h2>Solicite uma reunião com nossos <br> advogados especialistas</h2>
-        <a href="https://dtr.adv.br/contato/"><button class="button-acao2">Solicitar Reunião</button></a>
+        <a href="https://dtr.adv.br/contato"><button class="button-acao2">Saiba mais</button></a>
         <span id="section-areas-de-atuacao"></span>
     </div>
     <!-- FIM CHAMADA DE AÇÃO 2 -->
-     
+
     <!-- ÁREAS DE ATUAÇÃO -->
-    <sectio id="section-areas-de-atuacao" class="section-areas-de-atuacao">
+    <sectio id="areas-de-atuacao" class="section-areas-de-atuacao">
         <div class="div-h2">
             <h2>Áreas de Atuação</h2>
             <span class="divisor-areas-de-atuacao"></span>
         </div>
         <article>
             <div class="container">
-                <img src="assets/imagens/pexels-vlada-karpovich-7433853-scaled (1).webp" alt="">
+                <img src="assets/imagens/pexels-vlada-karpovich-7433853-scaled (1)_11zon.jpeg" alt="">
                 <div class="direito-empresarial">
                     <h3>Direito Empresarial & Societário</h3>
                     <p>
@@ -265,7 +262,7 @@
                         defesa de seus interesses; Reestruturação societária, planejamentos sucessórios e holdings;
                         Propriedade intelectual e industrial, Direito das marcas e patentes.
                     </p>
-                    <a href="https://dtr.adv.br/contato/"><button>Saiba Mais</button></a>
+                    <a href="https://dtr.adv.br/contato"><button>Saiba Mais</button></a>
                 </div>
             </div>
             <span class="divisor-article"></span>
@@ -284,15 +281,15 @@
                         estratégica, inclusive elaboração de pareceres, compliance fiscal e planejamento tributário, bem
                         como no contencioso administrativo e judicial.
                     </p>
-                    <a href="https://dtr.adv.br/contato/"><button>Saiba Mais</button></a>
+                    <a href="https://dtr.adv.br/contato"><button>Saiba Mais</button></a>
                 </div>
-                <img src="assets/imagens/StockCake-Equilibrio-financeiro-legal_1723602874.webp" alt="">
+                <img src="assets/imagens/StockCake-Equilibrio-financeiro-legal_1723602874_11zon.jpeg" alt="">
             </div>
             <span class="divisor-article"></span>
         </article>
         <article>
             <div class="container">
-                <img src="assets/imagens/pexels-sora-shimazaki-5673488-scaled.webp" alt="">
+                <img src="assets/imagens/11zon_resized (2).jpg" alt="">
                 <div class="direito-empresarial">
                     <h3>Prevenção de litígios, negociação e mediação</h3>
                     <p>
@@ -301,7 +298,7 @@
                         todavia, a posição do cliente, caso a disputa venha a se mostrar inevitável. Atuação em
                         Arbitragem e mediação de conflitos.
                     </p>
-                    <a href="https://dtr.adv.br/contato/"><button>Saiba Mais</button></a>
+                    <a href="https://dtr.adv.br/contato"><button>Saiba Mais</button></a>
                 </div>
             </div>
             <span class="divisor-article"></span>
@@ -318,16 +315,16 @@
                         diversas operações, formação de joint ventures para atuar no segmento imobiliário, assessoria em
                         desapropriações amigáveis ou judiciais, e especificação e instituição de condomínio e convenção.
                     </p>
-                    <a href="https://dtr.adv.br/contato/"><button>Saiba Mais</button></a>
+                    <a href="https://dtr.adv.br/contato"><button>Saiba Mais</button></a>
                 </div>
-                <img src="assets/imagens/pexels-laura-tancredi-7078666-scaled.webp" alt="">
+                <img src="assets/imagens/pexels-laura-tancredi-7078666-scaled_11zon.jpeg" alt="">
             </div>
             <span class="divisor-article"></span>
         </article>
 
         <article>
             <div class="container">
-                <img src="assets/imagens/pexels-sora-shimazaki-5673488-scaled.webp" alt="">
+                <img src="assets/imagens/11zon_resized (2).jpg" alt="">
                 <div class="direito-empresarial">
                     <h3>Direito de família e Planejamento sucessório</h3>
                     <p>
@@ -338,7 +335,7 @@
                         Atuamos, igualmente, na elaboração de planejamento sucessório (inclusive no âmbito tributário),
                         assim prevenindo disputas futuras e reduzindo os custos sucessórios.
                     </p>
-                    <a href="https://dtr.adv.br/contato/"><button>Saiba Mais</button></a>
+                    <a href="https://dtr.adv.br/contato"><button>Saiba Mais</button></a>
                 </div>
             </div>
         </article>
@@ -350,7 +347,7 @@
         <div class="popup-content">
             <h2>Política de Privacidade</h2>
             <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com
-                nossa <a href="C:\Users\Anderson\Desktop\Projetos\Site Karla e Thiago\DTR-Drumond-Torres-Rsende\lgpd\lgpd.html">Política de Privacidade</a>.</p>
+                nossa <a href="https://dtr.adv.br/lgpd">Política de Privacidade</a>.</p>
             <button id="accept-btn" class="accept-btn">Aceitar</button>
             <button id="decline-btn" class="decline-btn">Recusar</button>
         </div>
@@ -361,7 +358,7 @@
     <footer>
         <div class="footer">
             <div class="footer-div">
-                <a href="#"><img src="assets/imagens/Design-sem-nome-39-e1727286609121.png" alt=""></a>
+                <a href="https://dtr.adv.br/"><img src="assets/imagens/logo-footer.png" alt="logo do footer"></a>
                 <div class="menu-footer">
                     <h3>O Escritório</h3>
                     <nav>
@@ -388,17 +385,15 @@
                 <div class="fale-conosco">
                     <h3>Fale Conosco</h3>
                     <address>contato@dtr.adv.br</address>
-                    <a href="https://dtr.adv.br/contato/"><button class="button-acao-footer">Solicitar
+                    <a href="https://dtr.adv.br/contato"><button class="button-acao-footer">Solicitar
                             Reunião</button></a>
                 </div>
                 <div class="footer-redes-sociais">
                     <h3>Onde nos encontrar</h3>
                     <div class="footer-icones-sociais">
-                        <a href="https://www.instagram.com/dtradv/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/dtradv/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dtradv/" aria-label="instagram da DTR"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.linkedin.com/company/dtradv/" aria-label="linkedin da DTR"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://dtr.adv.br/" aria-label="página home da DTR"><ion-icon name="logo-facebook"></ion-icon></a>
                     </div>
                 </div>
             </div>
